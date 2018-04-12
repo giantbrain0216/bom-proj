@@ -27,15 +27,15 @@ class dashboardController extends Controller
 
         $lava = new Lavacharts;
         $weather = $lava->DataTable();
-        $weather->addNumberColumn(' Temp')
-            ->addNumberColumn('Data');
+        $weather->addDateTimeColumn(' Date')
+            ->addNumberColumn('Temperature');
         for($i = 0; $i < 100; $i++){
             $weather->addRow([$date[$i],$temperature[$i]]);
 
         }
 
         $lava->LineChart('Temps', $weather, [
-            'title' => 'Weather in October'
+            'title' => 'Temperature for every 30 minutes'
         ]);
 
 

@@ -19,28 +19,7 @@
 <body>
 <div>
     <div>
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">Temperature</th>
-                <th scope="col">Date</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                @foreach($temperature as $temp)
-                    <td>{{$temp}}</td>
 
-                @endforeach
-            </tr>
-            <tr>
-                @foreach($date as $dt)
-                    <td>{{$dt}}</td>
-
-                @endforeach
-            </tr>
-            </tbody>
-        </table>
         <div id="temps_div"></div>
         <?= $lava->render('LineChart', 'Temps', 'temps_div'); ?>
 
