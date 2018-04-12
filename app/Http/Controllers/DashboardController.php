@@ -19,8 +19,14 @@ class dashboardController extends Controller
 
         $temperature= array();
         $date = array();
+
+        $currentTemperature = $all_data["observations"]["data"][0]["air_temp"];
+        $currentWind = $all_data["observations"]["data"][0]["wind_spd_kmh"];
+        $currentWindDirection = $all_data["observations"]["data"][0]["wind_dir"];
+        $currentRelativeHumidity = $all_data["observations"]["data"][0]["rel_hum"];
+
         for($i = 0; $i < 100; $i++){
-            $temperature[] = round($all_data["observations"]["data"][$i]["apparent_t"],1);
+            $temperature[] = round($all_data["observations"]["data"][$i]["air_temp"],1);
             $date[] = $all_data["observations"]["data"][$i]["local_date_time_full"];
         }
 //        print_r($date);
@@ -42,6 +48,10 @@ class dashboardController extends Controller
         return view('/dashboard')->with(array(
             'temperature' => $temperature,
             'date' => $date,
+            'currentTemperature' =>$currentTemperature,
+            'currentWind'=>$currentWind,
+            'currentWindDirection'=>$currentWindDirection,
+            'currentRelativeHumidity' =>$currentRelativeHumidity,
             "lava"=>$lava));
     }
 }
