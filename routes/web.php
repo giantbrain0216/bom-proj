@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('/dashboard', 'dashboardController@index');
 Route::get('/sydney', 'SydneyController@index');
 Route::get('/brisbane', 'BrisbaneController@index');
+Route::get('/melbourne', 'MelbourneController@index');
