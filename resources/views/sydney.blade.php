@@ -1,6 +1,7 @@
 @extends('master')
-
+{{--TODO: create same layout for major cities--}}
 @section('content')
+
     <div class="row">
         <div class="col-md-12 col-md-offset-1">
             <h1>Sydney's Weather Observations</h1>
