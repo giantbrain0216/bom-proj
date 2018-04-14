@@ -41,7 +41,6 @@
         <?= $lava->render('LineChart', 'Temps', 'temps_div'); ?>
 
     </div>
-    <div id="chart_div"></div>
 </div>
 </body>
 
