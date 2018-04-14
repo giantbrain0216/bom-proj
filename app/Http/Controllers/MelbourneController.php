@@ -13,9 +13,9 @@ class MelbourneController extends Controller
     public function index()
     {
 
-        $syd = "http://reg.bom.gov.au/fwo/IDV60901/IDV60901.95936.json";
+        $melb = "http://reg.bom.gov.au/fwo/IDV60901/IDV60901.95936.json";
 
-        $all_data = $this->getWeatherData($syd);
+        $all_data = $this->getWeatherData($melb);
         $currentTemperature = $this->getCurrentTemperature($all_data);
         $currentWind = $this->getCurrentWind($all_data);
         $currentWindDirection = $this->getCurrentWindDirection($all_data);

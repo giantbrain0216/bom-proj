@@ -14,9 +14,9 @@ class BrisbaneController extends Controller
     public function index()
     {
 
-        $syd = "http://reg.bom.gov.au/fwo/IDQ60901/IDQ60901.94576.json";
+        $bns = "http://reg.bom.gov.au/fwo/IDQ60901/IDQ60901.94576.json";
 
-        $all_data = $this->getWeatherData($syd);
+        $all_data = $this->getWeatherData($bns);
         $currentTemperature = $this->getCurrentTemperature($all_data);
         $currentWind = $this->getCurrentWind($all_data);
         $currentWindDirection = $this->getCurrentWindDirection($all_data);
