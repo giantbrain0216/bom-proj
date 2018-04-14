@@ -12,6 +12,7 @@ use Khill\Lavacharts\Lavacharts;
 
 trait RequestTrait {
 
+    // functions to reuse by all controller as each controller uses different URL but gets the same information
 
     public function getWeatherData($url) {
 
