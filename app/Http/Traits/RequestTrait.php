@@ -87,7 +87,9 @@ trait RequestTrait {
         }
 
         $lava->LineChart('Temps', $weather, [
-            'title' => 'Temperature for every 30 minutes'
+            'title' => 'Temperature for every 30 minutes',
+            'backgroundColor'=>'#F5F8FA'
+
         ]);
 
 
