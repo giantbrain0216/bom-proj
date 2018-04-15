@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="row">
-        <div class="col-md-12 col-md-offset-1">
+        <div class="col-md-12">
             <h1>Sydney's Weather Observations</h1>
             <h5>Sydney Olympic Park</h5>
         </div>
@@ -20,8 +20,10 @@
 
     </div>
     <div class="row">
+        <div class="col-md-12">
+            <div id="temps_div"></div>
 
-        <div id="temps_div" style="width:80%;"></div>
+        </div>
     </div>
 
     <?= $lava->render('LineChart', 'Temps', 'temps_div'); ?>

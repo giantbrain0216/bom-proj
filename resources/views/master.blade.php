@@ -7,9 +7,6 @@
 
     <title>Weather Observations</title>
 
-    <!-- Fonts -->
-    {{--<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">--}}
-
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
     <!-- Styles -->
