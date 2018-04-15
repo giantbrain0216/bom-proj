@@ -8,15 +8,45 @@
     <title>Weather Observations</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    {{--<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">--}}
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="css/app.css">
+    <!-- Styles -->
+    <style>
+        html, body {
+            background-color: #fff;
+            color: #636b6f;
+            font-family: 'Merriweather', sans-serif;
+            font-weight: 100;
+            height: 100vh;
+            margin: 0;
+        }
 
+        .content {
+            text-align: center;
+        }
+
+
+        .links > a {
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container content">
+        <div>
         @yield('content')
+        </div>
     </div>
 </body>
 
