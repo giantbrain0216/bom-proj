@@ -11,11 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/dashboard', 'dashboardController@index');
+
+Route::get('/', 'dashboardController@index');
 Route::get('/canberra', 'CanberraController@index');
 Route::get('/sydney', 'SydneyController@index');
 Route::get('/brisbane', 'BrisbaneController@index');
