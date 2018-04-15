@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('content')
-    <div class="row">
+    <div class="row" style="padding-bottom: 50px">
         <div class="col-md-12">
             <h1>Melbourne's Weather Observations</h1>
             <h5>Melbourne Olympic Park</h5>
@@ -46,7 +46,7 @@
         </div>
     </div>
     <div class="row">
-        <a href="/" class="btn btn-default btn-lg " style="position:absolute; bottom:5%; right:50%" role="button">Back</a>
+        <a href="/" class="btn btn-default btn-lg back-button" role="button">Back</a>
 
     </div>
 

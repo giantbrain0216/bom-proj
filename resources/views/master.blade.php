@@ -78,6 +78,12 @@
             padding-top: 10%;
         }
 
+        .back-button{
+            position:absolute;
+            bottom:2%;
+            right:5%
+        }
+
     </style>
 </head>
 <body>
