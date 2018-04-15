@@ -11,6 +11,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link href="{{ asset('sass/master.css') }}" rel="stylesheet">
+
     <!-- Styles -->
     <style>
         html, body {

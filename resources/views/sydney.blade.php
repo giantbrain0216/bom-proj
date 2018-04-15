@@ -7,15 +7,35 @@
             <h1>Sydney's Weather Observations</h1>
             <h5>Sydney Olympic Park</h5>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
+            <p class="weather-title">Rain:</p>
+            <div class="rain-box">
+                <div class="weather-text">{{$rain}}</div>
+            </div>
 
-            <h4>Current temperature: {{$currentTemperature}}℃</h4>
-            <h4>Relative Humidity: {{$currentRelativeHumidity}}%</h4>
+            <p class="weather-title">Relative Humidity:</p>
+            <div class="humid-box">
+                <div class="weather-text">{{$currentRelativeHumidity}}%</div>
+            </div>
         </div>
-        <div class="col-md-6">
-            <h3>Wind</h3>
-            <h4>Current: {{$currentWind}}km/h</h4>
-            <h4>Direction: {{$currentWindDirection}}</h4>
+
+        <div class="col-md-4">
+            <p class="weather-title">Wind Current:</p>
+            <div class="rain-box">
+                <div class="weather-text">{{$currentWind}}km/h</div>
+            </div>
+            <p class="weather-title">Direction:</p>
+            <div class="humid-box">
+                <div class="weather-text">{{$currentWindDirection}}</div>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <p class="weather-title">Current Temperature:</p>
+            <div class="weather-box">
+                <div class="temp-text">{{$currentTemperature}}℃</div>
+            </div>
         </div>
 
     </div>

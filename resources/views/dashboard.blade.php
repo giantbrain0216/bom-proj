@@ -31,6 +31,7 @@
         </div>
 
         <div class="row" style="padding: 20px;">
+            <h4>Select a city:</h4>
             <div class = "col-md-6">
                 <a href="/canberra" class="btn btn-default btn-lg btn-block" role="button">Canberra</a>
                 <a href="/sydney" class="btn btn-default btn-lg btn-block" role="button">Sydney</a>

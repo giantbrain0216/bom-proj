@@ -20,6 +20,7 @@ class MelbourneController extends Controller
         $currentWind = $this->getCurrentWind($all_data);
         $currentWindDirection = $this->getCurrentWindDirection($all_data);
         $currentRelativeHumidity = $this->getCurrentRelativeHumidity($all_data);
+        $rain = $this->getRainTrace($all_data);
 
         $lava = $this->createChart($all_data);
 
@@ -30,6 +31,7 @@ class MelbourneController extends Controller
             'currentWind'=>$currentWind,
             'currentWindDirection'=>$currentWindDirection,
             'currentRelativeHumidity' =>$currentRelativeHumidity,
+            'rain'=>$rain,
             "lava"=>$lava));
     }
 }

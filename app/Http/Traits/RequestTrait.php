@@ -65,6 +65,11 @@ trait RequestTrait {
 
     }
 
+    public function getRainTrace($data){
+        $rain = $data["observations"]["data"][0]["rain_trace"];
+        return $rain;
+    }
+
     public function createChart($data){
 
         $lava = new Lavacharts;
