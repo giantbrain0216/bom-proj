@@ -20,7 +20,7 @@
         <div class="col-md-4">
             <p class="weather-title">Wind Current:</p>
             <div class="rain-box">
-                <div class="weather-text">{{$currentWind}}km/h</div>
+                <div class="weather-text">{{$currentWind}}<span style="font-size: 0.7em">km/h</span></div>
             </div>
             <p class="weather-title">Direction:</p>
             <div class="humid-box">

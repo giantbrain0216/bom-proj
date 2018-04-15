@@ -38,6 +38,46 @@
             text-transform: uppercase;
         }
 
+        .weather-box{
+            background-color: #0084b4;
+            position: relative;
+            width: 30%;
+            padding-top: 20%;
+        }
+
+        .temp-text {
+            position:  absolute;
+            top: 20%;
+            left:20%;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+        .weather-text {
+            position:  absolute;
+            top: 20%;
+            left:20%;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+        .rain-box{
+            background-color: #1da1f2;
+            position: relative;
+            width: 15%;
+            padding-top: 10%;
+        }
+        .weather-title{
+            text-align: left;
+            padding-top:10px;
+        }
+        .humid-box{
+            background-color: #c2d4e1;
+            position: relative;
+            width: 15%;
+            padding-top: 10%;
+        }
+
     </style>
 </head>
 <body>
