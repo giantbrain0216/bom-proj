@@ -21,8 +21,13 @@
     <div class="row">
         <div class="col-md-12">
             <div id="temps_div"></div>
-
         </div>
+    </div>
+
+
+    <div class="row">
+        <a href="/" class="btn btn-default btn-lg " style="position:absolute; bottom:5%; right:50%" role="button">Back</a>
+
     </div>
 
     <?= $lava->render('LineChart', 'Temps', 'temps_div'); ?>
