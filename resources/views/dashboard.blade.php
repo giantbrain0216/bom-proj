@@ -18,27 +18,30 @@
 <div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-md-offset-1">
-                <h1>Canberra's Weather Observations</h1>
-            </div>
-            <div class="col-md-6">
 
-                <h4>Current temperature: {{$currentTemperature}}℃</h4>
-                <h4>Relative Humidity: {{$currentRelativeHumidity}}%</h4>
+            <div class="col-md-12" style="text-align: center">
+                <h1>Weather observations for major cities in Australia</h1>
             </div>
-            <div class="col-md-6">
-                <h3>Wind</h3>
-                <h4>Current: {{$currentWind}}km/h</h4>
-                <h4>Direction: {{$currentWindDirection}}</h4>
-            </div>
-
         </div>
+
         <div class="row">
-
-            <div id="temps_div" style="width:80%;"></div>
+            <div style="width: 100%; height: 500px;">
+                {!! Mapper::render() !!}
+            </div>
         </div>
 
-        <?= $lava->render('LineChart', 'Temps', 'temps_div'); ?>
+        <div class="row" style="padding: 20px;">
+            <div class = "col-md-6">
+                <a href="/canberra" class="btn btn-default btn-lg btn-block" role="button">Canberra</a>
+                <a href="/sydney" class="btn btn-default btn-lg btn-block" role="button">Sydney</a>
+                <a href="/brisbane" class="btn btn-default btn-lg btn-block" role="button">Brisbane</a>
+            </div>
+            <div class = "col-md-6">
+                <a href="/melbourne" class="btn btn-default btn-lg btn-block" role="button">Melbourne</a>
+                <a href="/perth" class="btn btn-default btn-lg btn-block" role="button">Perth</a>
+            </div>
+        </div>
+
 
     </div>
 </div>
